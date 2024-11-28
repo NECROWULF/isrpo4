@@ -1,2 +1,13 @@
+import unittest
+
 def area(a,b):
     return a * b
+
+class RectangleTestCase(unittest.TestCase):
+    def test_1(self):
+        res = area(10, 15)
+        self.assertEqual(res, 150)
+    def test_0(self):
+        res = area(10,0)
+        self.assertEqual(res, 0)
+    
